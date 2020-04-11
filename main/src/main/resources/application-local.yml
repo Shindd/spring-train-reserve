@@ -1,0 +1,17 @@
+spring:
+  profiles: local
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url:
+    username:
+    password:
+    hikari:
+      maximum-pool-size: 10
+  thymeleaf:
+    cache: false
+
+server:
+  error:
+    include-exception: true
+    include-stacktrace: always
+

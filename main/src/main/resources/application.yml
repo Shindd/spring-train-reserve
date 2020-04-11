@@ -1,0 +1,39 @@
+spring:
+  profiles:
+    active: local
+  http:
+    encoding:
+      enabled: true
+      force: true
+  messages:
+    basename: messages/message
+    encoding: utf-8
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url:
+    username:
+    password:
+    hikari:
+      maximum-pool-size: 10
+  jackson:
+    default-property-inclusion: non_empty
+  servlet:
+    multipart:
+      max-file-size: 1024MB
+      max-request-size: 1024MB
+
+mybatis:
+  type-aliases-package: com.shin
+  mapper-locations: classpath*/:mybatis/mapper/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    default-fetch-size: 100
+    default-statement-timeout: 30
+
+logging:
+  level:
+    root: info
+    com.shin: DEBUG
+    com.shin.mapper: TRACE
+    org.springframework.web: DEBUG
+
