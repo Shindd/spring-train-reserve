@@ -1,7 +1,7 @@
 package com.shin.code;
 
 /**
- * 기차 종류
+ * Types of train to treat
  */
 public enum TrainType {
 	
