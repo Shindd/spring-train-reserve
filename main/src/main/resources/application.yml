@@ -37,3 +37,10 @@ logging:
     com.shin.mapper: TRACE
     org.springframework.web: DEBUG
 
+openapi:
+  tago:
+    private-key: i1rm%2Bg5Ukg19xNm698hILGi9RRX%2BilZqK%2B6RXCIy3hZ6TdHvcKHaQ9PCVzpOeyyWbyIF3AwTg1S6ZfLE2BP6nQ%3D%3D
+    url:
+      retrieve-cities: http://openapi.tago.go.kr/openapi/service/TrainInfoService/getCtyCodeList
+      retrieve-nodes: http://openapi.tago.go.kr/openapi/service/TrainInfoService/getCtyAcctoTrainSttnList
+      find-trains: http://openapi.tago.go.kr/openapi/service/TrainInfoService/getStrtpntAlocFndTrainInfo
